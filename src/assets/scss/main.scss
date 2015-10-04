@@ -5,3 +5,10 @@ The main SCSS file for everything, yep
 @import "poole";
 @import "syntax";
 @import "lanyon";
+
+#about {
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
