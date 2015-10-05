@@ -1,5 +1,3 @@
-<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
-     styles, `#sidebar-checkbox` for behavior. -->
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 
 <!-- Toggleable sidebar -->
@@ -9,7 +7,7 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}" href="/">Home</a>
+    <a class="sidebar-nav-item{% if page.url == "/" %} active{% endif %}" href="/">$ ls posts</a>
 
     {% assign pages_list = site.pages %}
     {% for node in pages_list %}
@@ -19,11 +17,19 @@
         {% endif %}
       {% endif %}
     {% endfor %}
-
-<!--     <span class="sidebar-nav-item">Run by <a href="https://twitter.com/{{ site.author.twitter}}">@{{ site.author.name }}<a/></span> -->
   </nav>
 
-  <div class="sidebar-item">
+  <div class="sidebar-item social-panel">
+    <a href="{{ site.author.twitter }}" target="_blank">
+      <img src="/assets/images/icons/twitter.svg" alt="@{{ site.author.name }}" />
+    </a>
 
+    <a href="{{ site.author.facebook }}" target="_blank">
+      <img src="/assets/images/icons/facebook.svg" alt="{{ site.author.name }}" />
+    </a>
+
+    <a href="{{ site.author.linkedin }}" target="_blank">
+      <img src="/assets/images/icons/linkedin.svg" alt="{{ site.author.name }}" />
+    </a>
   </div>
 </div>

@@ -4,7 +4,7 @@ layout: page
 title: $ whoami
 ---
 
-Welcome to a mind of a developer ([@tadam313](http://twitter.com/tadam313)). Honestly, I've never wanted to start a blog. I thought it is just a desperate attempt from people to be someone "special", someone unique in the crowd. Then someday I realised, I just put off myself and didn't have anything to write about. There were some moments recently, some special moments when I felt like *hey, actually it is a pretty nice idea, maybe it's worth sharing with the world*. When I had this feeling n times I decided not to get by and start blogging about them.
+Welcome to a mind of a developer ([@tadam313]({{ site.author.twitter }})). Honestly, I've never wanted to start a blog. I thought it is just a desperate attempt from people to be someone "special", someone unique in the crowd. Then someday I realised, I just put off myself and didn't have anything to write about. There were some moments recently, some special moments when I felt like *hey, actually it is a pretty nice idea, maybe it's worth sharing with the world*. When I had this feeling n times I decided not to get by and start blogging about them.
 
 > "The secret of getting ahead is getting started." - Mark Twain
 
