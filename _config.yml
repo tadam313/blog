@@ -1,19 +1,23 @@
 # Title, decription, tagline and URL for your site
 # Can be used in your theme by calling 'site.title' and so on
-title: tadam313
+title: In a developer mind
 description: Personal blog
-tagline: Math.rnd
+tagline: Math.random()
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: src
 destination: site
 
+sass:
+  sass_dir: assets/stylesheets/scss
+  style: compressed
+
 # Same as the title etc for your site but can instead be
 # called by using 'site.author.name' and so on
 author:
-  name: Adam
+  name: tadam313
   email: adam.pelle.peter@gmail.com
-  bio: Enthusiastic and eager developer
+  bio: Enthusiastic and eager developer and musician
   twitter: 'https://twitter.com/tadam313'
   facebook: 'http://facebook.com/tadam313'
 

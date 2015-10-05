@@ -1,10 +1,11 @@
-/*
-The main SCSS file for everything, yep
-*/
+---
+# Stylesheet for about page
+---
+@charset "utf-8";
 
+@import "lanyon";
 @import "poole";
 @import "syntax";
-@import "lanyon";
 
 #about {
   img {

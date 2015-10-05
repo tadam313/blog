@@ -15,10 +15,6 @@ Icon
 # Linux
 *~
 
-# Tags
-# Ignore tags created by etags and ctags
-TAGS
-tags
 
 # Always-ignore files and folders #
 *.diff
@@ -29,8 +25,6 @@ tags
 *.swn
 *.swo
 *.swp
-._*
-*~
 
 # Ignore packages #
 *.7z
@@ -43,7 +37,6 @@ tags
 *.zip
 
 # Packages
-node_modules/*
 .tmp
 
 # Sublime
@@ -51,12 +44,6 @@ node_modules/*
 *.sublime-workspace
 *.sublime-projectcompletions
 
-app/_bower_components
-
-# Jekyll folders
-.jekyll-build/
-site/
-
-# hide the AWS and Rsync credentials file
-aws-credentials.json
-rsync-credentials.json
+# Temp folders
+site
+.sass-cache/
