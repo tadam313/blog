@@ -14,16 +14,16 @@ Yeah, pretty much it, I've just taken this handy suggestion and started it. But 
 
 OK, don't be scared it won't be that much nerdy. Just a bit.
 
-Couple of words about me. Currently I'm working as a Javascript developer. Your guess is probably correct, this is also my favourite language. Beside it, sometimes I need to touch elsewhere to deal with other technologies, it is unavoidable, it is the life of an engineer, you need to solve problems, problems still not exists, problems from another domain, problems everywhere. Here is my thing: **LANGUAGE IS JUST A TOOL**. Heard that right, all that matters is the mindset. Although language can shape how people think about specific problem it can even help writing more compact and clean code for specific problems but without critical thinking that is all empty at the end. In my point of view mindset is something which could transform a developer into an engineer.
+Couple of words about me. Currently I'm working as a Javascript developer. Your guess is probably correct, this is also my favourite language. Beside it, sometimes I need to touch elsewhere to deal with other technologies, it is unavoidable, it is the life of an engineer. You need to solve problems, problems still not exists, problems from another domain, problems everywhere. Here is my thing: **LANGUAGE IS JUST A TOOL**. Heard that right, all that matters is the mindset and attitude. Although language can shape how people think about specific problem it can even help writing more compact and cleaner code for specific problems but without critical thinking that is all empty at the end. In my point of view mindset is something which could transform a developer into an engineer.
 
 OK now, what is this blog about? Just another JS blog with all that trendy-fancy JS frameworks and browser stuff?
 
 ![no](/assets/images/no_meme.jpg)
 
-No, not entirely at least. The majority of the content might written around JS but I am planning to get through a different message here. **IDEAS**. Yeah, this blog is about ideas. Ideas that might surprise you, ideas that are new and ideas that maybe add some novelty to the community. I don't want to extend your head with useless and stale stories because that makes the whole point of blogging. Transmit something new, something stunning that adds value to our life instead of bore everybody down.
+No, not entirely at least. The majority of the content might written for JS but I am planning to get through a different message here. **IDEAS**. Yeah, this blog is about ideas. Ideas that might surprise you, ideas that are remarkable and ideas that maybe add some novelty to the community. I don't want to extend your head with useless and stale stories abusing the whole point of blogging. Transmit something new, that is my purpose, something stunning that adds value to our life instead of bore everybody down.
 
-If you still can not live with JS I am planning to make the posts versatile enough. When such a nice idea crosses my mind I share it regardless the language and technology I promise. Deal?
+If you still can not live with JS I am planning to make the posts versatile enough. When such a nice idea crosses my mind I share it regardless the technology and context I promise. Deal?
 
 ![deal](/assets/images/deal_meme.jpg)
 
-I read somewhere that every blogger should have a great niche which encourages to generate content day by day, proclaim the mind from the housetop. Well, I think mine is software engineering. Sounds geeky, I know, blame me if you want, but the truth always boils down to the fact `It is a lifestyle, not a job`. Oh and 42, I guess.
+I read somewhere that every blogger should have a great muse which encourages to generate content day by day and make proclaiming the brain from the housetop. Well, I think mine is software engineering. Sounds geeky, I know, blame me if you want, but the truth always boils down to the fact `It is a lifestyle, not a job`.
