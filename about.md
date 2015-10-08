@@ -1,7 +1,8 @@
 ---
 id: about
 layout: page
-title: $ whoami
+title: About me
+geek_title: $ whoami
 ---
 
 Welcome to a mind of a developer ([@tadam313]({{ site.author.twitter }})). Honestly, I've never wanted to start a blog. I thought it is just a desperate attempt from people to be someone "special", someone unique in the crowd. Then someday I realised, I just put off myself and didn't have anything to write about. There were some moments recently, some special moments when I felt like *hey, actually it is a pretty nice idea, maybe it's worth sharing with the world*. When I had this feeling n times I decided not to get by and start blogging about them.
@@ -26,4 +27,4 @@ If you still can not live with JS I am planning to make the posts versatile enou
 
 ![deal](/assets/images/deal_meme.jpg)
 
-I read somewhere that every blogger should have a great muse which encourages to generate content day by day and make proclaiming the brain from the housetop. Well, I think mine is software engineering. Sounds geeky, I know, blame me if you want, but the truth always boils down to the fact `It is a lifestyle, not a job`.
+I read somewhere that every blogger should have a great muse which encourages to generate content day by day and make proclaiming the brain from the housetop. Well, I think mine is software engineering. Sounds geeky, I know, blame me if you want, but the truth always boils down to the fact `This is a lifestyle, not a job`.

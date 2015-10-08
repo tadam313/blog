@@ -1,4 +1,10 @@
 
+@import '_variables';
+
+body, html, .wrap {
+  height: 100%;
+}
+
 .social-panel {
   text-align: center;
 
@@ -7,6 +13,10 @@
 
     img {
       width: 60px;
+
+      @include media('handheld') {
+        width: 50px;
+      }
     }
   }
 }
