@@ -14,7 +14,7 @@ sass:
 author:
   name: tadam313
   email: adam.pelle.peter@gmail.com
-  bio: Enthusiastic and eager developer and musician
+  bio: "Enthusiastic, eager developer and musician"
   twitter: 'https://twitter.com/tadam313'
   facebook: 'http://facebook.com/adam.pelle313'
   linkedin: 'https://hu.linkedin.com/pub/adam-pelle/52/467/798'
@@ -22,7 +22,6 @@ author:
 # general setting for Jekyll
 # googleAnalytics: UA-XXXXX-X
 
-# _config.build.yml overwrites these options when you run `gulp build`
 # Enables future posts (posts with dates in the future) and drafts
 future: false
 show_drafts: false
@@ -36,7 +35,6 @@ relative_permalinks: true
 permalink: pretty
 paginate: 10
 paginate_path: 'page:num'
-excerpt_separator: '<!--more-->'
 
 # Markdown library
 markdown: kramdown

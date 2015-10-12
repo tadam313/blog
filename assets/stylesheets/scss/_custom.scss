@@ -5,6 +5,15 @@ body, html, .wrap {
   height: 100%;
 }
 
+.post, .page {
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 370px;
+    max-width: 90%;
+  }
+}
+
 .social-panel {
   text-align: center;
 
