@@ -1,6 +1,8 @@
 ---
 layout: post
 title: The myth of variable arguments
+tags: ["javascript", "functions", "overloading", "ES6", "clean code"]
+related_posts: ["http://ejohn.org/blog/javascript-method-overloading"]
 ---
 
 Recently I run into many troubles when I tried to deal with variable arguments in javascript. I decided to write a post about it to demonstrate my problems and possible solutions. Start with the beginning, as you probably know javascript is a dynamic language and very permissive with functions. We declare thoose and simply use, easy enough. Not even required to invoke them with as many arguments as we declared. *Wait...* ooh-ooh here comes the problem.
