@@ -19,6 +19,8 @@ author:
   facebook: 'http://facebook.com/adam.pelle313'
   linkedin: 'https://hu.linkedin.com/pub/adam-pelle/52/467/798'
 
+url: 'http://tadam313.github.io'
+
 # general setting for Jekyll
 # googleAnalytics: UA-XXXXX-X
 
@@ -38,4 +40,4 @@ paginate_path: 'page:num'
 
 # Markdown library
 markdown: kramdown
-highlighter: "pygments"
+highlighter: pygments

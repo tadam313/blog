@@ -7,18 +7,3 @@
 @import "poole";
 @import "syntax";
 @import "custom";
-
-
-.post-tags {
-  padding-left: 0;
-
-  li {
-    padding: 3px 6px;
-    margin: 3px auto;
-    font-size: 0.75em;
-    display: inline-block;
-    list-style: none;
-    background: #505050;
-    color: #fff;
-  }
-}
