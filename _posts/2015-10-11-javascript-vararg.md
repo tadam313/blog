@@ -5,7 +5,7 @@ tags: ["javascript", "functions", "overloading"]
 related_posts: ["http://ejohn.org/blog/javascript-method-overloading"]
 ---
 
-Recently I run into many troubles when I tried to deal with variable arguments in javascript. I decided to write a post about it to demonstrate my problems and possible solutions. Start with the beginning, as you probably know javascript is a dynamic language and very permissive with functions. We declare thoose and simply use, easy enough. Not even required to invoke them with as many arguments as we declared. *Wait...* ooh-ooh here comes the problem.
+Recently I run into many troubles when I tried to deal with variable arguments in javascript. I decided to write a post about it to demonstrate my problems and possible solutions. Start with the beginning, as we probably know javascript is a dynamic language and very permissive with functions. We declare those and simply use, easy enough. Not even required to invoke with as many arguments as we declared. *Wait...* ooh-ooh... here comes the problem.
 
 ## The problem
 
@@ -74,7 +74,7 @@ We could still do something about it. I created a gist to demonstrate my idea. I
 
 ## How ES6 could save us all
 
-Before this post is over I need to mention a new feature from ES6 which could completely replace my solution: *Destructuring Assignment*. Clarification is out of scope now, but you can read more about it [here](http://es6-features.org/#ParameterContextMatching){:target="blank"}. Using this solution you can write something like:
+Before this post is over I need to mention a new feature from ES6 which could completely replace my solution: *Destructuring Assignment*. Clarification is out of scope now, but you can read more about it [here](http://es6-features.org/#ParameterContextMatching){:target="blank"}. Using this solution we can write something like:
 
 {% highlight javascript %}
 function makeCoffe({ type = 'latte', strength = 'mild', milk, sugar }) {
