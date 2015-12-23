@@ -5,7 +5,7 @@ tags: ["javascript", "functions", "overloading"]
 related_posts: ["http://ejohn.org/blog/javascript-method-overloading"]
 ---
 
-Recently I run into many troubles when I tried to deal with variable arguments in javascript. I decided to write a post about it to demonstrate my problems and possible solutions. Start with the beginning, as we probably know javascript is a dynamic language and very permissive with functions. We declare those and simply use, easy enough. Not even required to invoke with as many arguments as we declared. *Wait...* auch... here comes the problem.
+Recently I run into many troubles when I tried to deal with variable arguments in javascript. I decided to write a post about it to demonstrate my problems and possible solutions. Start with the beginning, as we probably know javascript is a dynamic language and very permissive with functions. We declare those and simply use, easy enough. Not even required to invoke with as many arguments as we declared. *Wait...*... here comes the problem.
 
 ## The problem
 
@@ -60,7 +60,7 @@ function makeCoffe(type, strength, milk, sugar) {
 
 ![surprise](/assets/images/varargs/surprise_meme.jpg)
 
-*Done...* wait..., any problem? **TONS**. First, can you spot the bug in the code? We assigned `strength` value to `sugar` since it holds the sugar value which was the second in the argument list. Unfortunatelly we forget to clear that, still holds the sugar value. *Awww...* kernel panic occurred, the robot doesn't know anything about coffee type `true`. *Wait...* we could have easily avoided that problem by using `arguments` variable itself which holds every parameters value by order. (it is an array-like object, but [not real array!!](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)). *Problem solved...* not so fast we have lost argument names. There is no real reason anymore to use arguments if we had an object holding every one of them. *Sigh...* not so nice, and what about IntelliSense?
+*Done...*, any problem? **TONS**. First, can you spot the bug in the code? We assigned `strength` value to `sugar` since it holds the sugar value which was the second in the argument list. Unfortunatelly we forget to clear that, still holds the sugar value. *Awww...* fatal error occurred, the robot doesn't know anything about coffee type `true`. We could have easily avoided that problem by using `arguments` variable itself which holds every parameters value by order. (it is an array-like object, but [not real array!!](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)). *Problem solved...* not so fast we have lost argument names. There is no real reason anymore to use arguments if we had an object holding every one of them. *Sigh...* not so nice, and what about IntelliSense?
 
 The main problem originates from the fact that we are trying to identify the specific function variation based on arguments in runtime! We should really look for some kind of declarative approach...
 
