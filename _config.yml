@@ -39,4 +39,4 @@ paginate_path: 'page:num'
 
 # Markdown library
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
