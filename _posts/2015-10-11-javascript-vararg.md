@@ -17,7 +17,7 @@ function makeCoffee(type, strength, milk, sugar) {
 }
 {% endhighlight %}
 
-Really simple, isn't it? The purpose is pretty obvious, it is the API of a programmable coffee machine robot which we are going to create throughout this post. Invoking the function orders a robot to make a coffee and serve us without leaving the desk, very cozy for sure. OK probably no one wants to read a detailed technical documentation, just use it seamlessly. We really shouldn't design the API half-baked.
+Really simple, isn't it? The purpose is pretty obvious, it is the API of a programmable coffee machine robot. Invoking the function orders a robot to make a coffee and serve us without leaving the desk, very cozy for sure. OK probably no one wants to read a detailed technical documentation, just use it seamlessly. We really shouldn't design the API half-baked.
 
 Let's see some use cases:
 
@@ -60,7 +60,7 @@ function makeCoffe(type, strength, milk, sugar) {
 
 ![surprise](/assets/images/varargs/surprise_meme.jpg)
 
-*Done...*, any problem? **TONS**. First, can you spot the bug in the code? We assigned `strength` value to `sugar` since it holds the sugar value which was the second in the argument list. Unfortunatelly we forget to clear that, still holds the sugar value. *Awww...* fatal error occurred, the robot doesn't know anything about coffee type `true`. We could have easily avoided that problem by using `arguments` variable itself which holds every parameters value by order. (it is an array-like object, but [not real array!!](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)). *Problem solved...* not so fast we have lost argument names. There is no real reason anymore to use arguments if we had an object holding every one of them. *Sigh...* not so nice, and what about IntelliSense?
+*Done...*, any problem? **TONS**. First, can you spot the bug in the code? We assigned `strength` value to `sugar` since it holds the sugar value which was the second in the argument list. Unfortunatelly we forget to clear that, still holds the sugar value... Error occurred, the robot doesn't know anything about coffee type `true`. We could have easily avoided that problem by using `arguments` variable itself which holds every parameters value by order. (it is an array-like object, but [not real array!!](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)). *Problem solved...* not so fast we have lost argument names. There is no real reason anymore to use arguments if we had an object holding every one of them. *Sigh...* not so nice, and what about IntelliSense?
 
 The main problem originates from the fact that we are trying to identify the specific function variation based on arguments in runtime! We should really look for some kind of declarative approach...
 
