@@ -32,8 +32,7 @@ lsi: false
 # Only make the last 10 posts so generating isn't slow
 limit_posts: 10
 
-# Permalink structure and pagination options
-relative_permalinks: true
+# Pagination options
 permalink: pretty
 paginate: 10
 paginate_path: 'page:num'
