@@ -16,6 +16,6 @@ A couple of words about me. Currently, I'm working as a software engineer in the
 
 Ok, so what is this blog about? **IDEAS**. Really don't expect too much story telling or casual everyday life reporting I won't bother with that. This blog is about software development related ideas and thoughts which I think worth sharing publicly. I am planning to make the posts versatile enough, not focus entirely on any particular language, but I can not promise anything. I'll add new posts when I can, probably not that often, since _like I said_ I may have a life or something :)
 
-I read somewhere that every blogger should have a great muse which encourages to generate content day by day. Well, I think mine is software craftsmanship. Sounds geeky, I know but the truth always boils down to the fact `This is a lifestyle, not a job`.
+I read somewhere that every blogger should have a great muse which encourages to generate content day by day. Well, I think mine is software craftsmanship. Sounds geeky, I know but for me the truth always boils down to the fact `This is a lifestyle, not a job`.
 
 ![crazy ideas](/assets/images/about/programmer_gender.jpg)

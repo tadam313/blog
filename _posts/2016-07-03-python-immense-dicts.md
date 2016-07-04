@@ -1,10 +1,10 @@
 ---
 layout: post
-title: How to tame immense json
+title: How to tame immense json in Python
 tags: ["python", "json", "dictionaries", "adapter pattern"]
 ---
 
-Recently my team and me encountered a problem which didn't seem very complicated at first... The goal was to simply work with and process very large JSON objects in Python. We decided not to create a heavyweight, fully fledged model object as it takes time and we probably wouldn't need every bit of that anyway, so we sticked at good old dict. This choice has started to pay off, then all the sudden the realization came with a big sigh...
+Recently my team and me encountered a problem which didn't seem very complicated at first... The goal was to simply work with and process very large JSON objects in Python. We decided not to create a heavyweight, fully fledged model object as it takes time and we probably wouldn't need every part anyway, so we sticked at the good old dictionary. This choice has started to pay off, then all the sudden the realization came with a big sigh...
 
 ## JSON magic in Python
 
@@ -52,7 +52,7 @@ except KeyError:
   values = None
 {% endhighlight %}
 
-Definitely an improvement over the previous approach, feel free to use it, in a small scale it'd do, no doubt. The big advantage is the explicitness, like reading an english sentence. However I still think there is a room for improvement... I appreciate it's really straightforward and -- in many ways --  a pythonic solution but at the same time a bit verbose for my taste. Handling the `KeyError` has nothing to do with the business logic itself and repeating it dozens of time can introduce another code smell. So what can we do about it?
+Definitely an improvement over the previous approach, feel free to use it, in a small scale it'd do, no doubt. The big advantage is the explicitness, like reading an english sentence. However I still think there is a room for improvement... I appreciate it's really straightforward and -- in many ways --  a pythonic solution but at the same time a bit verbose for my taste. Handling the `KeyError` may completely unrelated and could be undesired, moreover repeating it dozens of time can introduce another code smell. So what can we do about it?
 
 ## Adapter pattern FTW
 
@@ -62,7 +62,7 @@ As for the majority of software design problems, the answer is, of course, wrapp
 
 For a dictionary adapter, I'd certainly use a `defaultdict` which provides you the functionality of the aforementioned `get` method out of the box (just have to specify in the constructor what object should it return) to make it even simpler. Moreover, I'll expose some important data as a property using the python property decorator. But the choice is yours, as the whole fuss is about to conceal the nasty implementational details, you can do whatever you want under the hood, as long as it provides the expected interface.
 
-Here is my simple dict adapter:
+Here is my very simple dict adapter:
 
 {% gist tadam313/d8be41f092be6d8351b1834538e0c168 %}
 
