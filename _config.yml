@@ -1,5 +1,3 @@
-# Title, decription, tagline and URL for your site
-# Can be used in your theme by calling 'site.title' and so on
 title: Mind of a developer
 description: tadam313 blog
 tagline: Math.random()
@@ -14,7 +12,7 @@ sass:
 author:
   name: tadam313
   email: adam.pelle.peter@gmail.com
-  bio: "Enthusiastic, eager developer and musician"
+  bio: 'Software engineer and musician'
   twitter: 'https://twitter.com/tadam313'
   facebook: 'http://facebook.com/adam.pelle313'
   linkedin: 'https://hu.linkedin.com/pub/adam-pelle/52/467/798'
@@ -23,6 +21,11 @@ url: 'http://tadam313.github.io'
 
 # general setting for Jekyll
 # googleAnalytics: UA-XXXXX-X
+
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-coffeescript
 
 # Enables future posts (posts with dates in the future) and drafts
 future: false

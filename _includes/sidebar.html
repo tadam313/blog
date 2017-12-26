@@ -7,20 +7,19 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == "/" %} active{% endif %}"
-      href="/" data-geek-title="$ ls posts" title="Home">
+    <a class="sidebar-nav-item{% if page.url == "/" %} active{% endif %}" href="/" title="Home">
       Home
+      <i>- posts</i>
     </a>
 
-    {% assign pages_list = site.pages %}
-    {% for node in pages_list %}
-      {% if node.title != null %}
+    {% for node in site.pages %}
+      {% if node.title %}
         {% if node.layout == "page" %}
           <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}"
             href="{{ node.url }}"
-            title="{{ node.title }}"
-            data-geek-title="{{ node.geek_title }}">
+            title="{{ node.title }}">
               {{ node.title }}
+              <i>- {{ node.sub_title }}</i>
           </a>
         {% endif %}
       {% endif %}

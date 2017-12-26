@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{% assign post_url = site.url | append: page.url %}
+{% assign share_url = page.bitlink | if: page.bitlink, post_url %}
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
@@ -11,7 +13,7 @@ layout: default
 <ul class="social-panel">
   <li>
     <a class="share-link"
-       href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title | uri_escape }}&via=tadam313&hashtags={{ page.tags | first }}"
+       href="https://twitter.com/intent/tweet?url={{ share_url | url_encode }}&text={{ page.title | url_encode }}&via=tadam313&hashtags={{ page.tags | first | url_encode }}"
        title="Share on Twitter">
       <img src="/assets/images/icons/twitter-share.svg" alt="Share on Twitter" />
     </a>
@@ -25,7 +27,7 @@ layout: default
   </li> -->
   <li>
     <a class="share-link"
-       href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}&hl=en-US"
+       href="https://plus.google.com/share?url={{ share_url | url_encode }}&hl=en-US"
        title="Share on Google Plus">
       <img src="/assets/images/icons/google-share.svg" alt="Share on Google Plus" />
     </a>
@@ -38,7 +40,7 @@ layout: default
     {% for post in site.related_posts limit:3 %}
       <li>
         <h3>
-          <a href="/{{ post.url }}">
+          <a href="{{ post.url }}">
             {{ post.title }}
             <small>{{ post.date | date_to_string }}</small>
           </a>
