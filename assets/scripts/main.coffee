@@ -1,24 +1,13 @@
 ---
-# Main JS file
+# Main coffee file
 ---
 
 $ ->
-
+  # close side bar on body click
   $('.wrap').click ->
     $('#sidebar-checkbox').prop 'checked', false
 
-
-  $('.sidebar-nav-item').hover ->
-    $this = $ this
-    geekTitle = $this.data 'geekTitle'
-    normalTitle = $this.prop 'title'
-
-    if $this.text().trim() == normalTitle
-      $this.text geekTitle
-    else
-      $this.text normalTitle
-
-
+  # handle social share buttons
   $('.social-panel .share-link').click (ev) ->
     ev.preventDefault()
     location = $(this).prop 'href'

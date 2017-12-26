@@ -17,3 +17,6 @@ $breakpoints: (
     @warn "Couldn't find a breakpoint named `#{$name}`.";
   }
 }
+
+// colours
+$primary_alt_text: #7a7a7a;
