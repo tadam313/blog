@@ -233,6 +233,9 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-coffeescript
+  jekyll-gist
+  jekyll-paginate
 
 BUNDLED WITH
    1.16.0

@@ -5,5 +5,5 @@ gem 'github-pages'
 group :jekyll_plugins do
   gem 'jekyll-gist'
   gem 'jekyll-coffeescript'
-  gem 'jekyll-pagination'
+  gem 'jekyll-paginate'
 end
