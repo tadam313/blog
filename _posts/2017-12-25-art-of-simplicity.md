@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Art of simplicity
-tags: ['software engineering', 'simplicity', 'complexity', 'software projects']
+tags: ['software_development', 'simplicity', 'complexity', 'project']
 bitlink: http://bit.ly/2C0LqnS
 ---
 
