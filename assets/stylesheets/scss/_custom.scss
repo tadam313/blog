@@ -12,6 +12,8 @@ body, html, .wrap {
     width: 370px;
     max-width: 90%;
   }
+
+  margin-bottom: 2rem;
 }
 
 .sidebar-nav-item {
@@ -51,6 +53,24 @@ body, html, .wrap {
       }
     }
   }
+}
+
+.footnotes {
+  color: $primary_alt_text;
+  font-size: .75rem;
+  font-style: italic;
+  border-top: 1px solid $primary_alt_text;
+  padding-top: 1rem;
+  margin-top: .5rem;
+}
+
+// figure caption
+img + em {
+  display: inline-block;
+  color: $primary_alt_text;
+  font-size: .85rem;
+  text-align: center;
+  width: 100%;
 }
 
 .post-tags {

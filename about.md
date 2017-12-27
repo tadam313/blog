@@ -6,7 +6,7 @@ sub_title: whoami
 
 Welcome to a mind of a developer ([@tadam313]({{ site.author.twitter }})). Honestly, it was never really my intention to start a blog but someday I realized, I just put off myself and didn't have anything to write about. There were some moments recently, some special moments when I felt like *hey, actually it is a pretty nice idea, maybe it's worth sharing with someone*. When I had this feeling nth times I decided not to pass by and start blogging about them.
 
-> "The secret of getting ahead is getting started." - Mark Twain
+> The secret of getting ahead is getting started. - Mark Twain
 
 Yeah, pretty much it, I've just taken this handy suggestion and went for it. But what is the point what is this whole thing really about? Well, broadly speaking this blog leads you right onto the tangled paths running across my mind. It is a technical blog filled with all my crazy ideas and fictions.
 
