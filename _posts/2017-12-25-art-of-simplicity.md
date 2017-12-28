@@ -9,7 +9,7 @@ image: art-of-simplicity/simple-vs-complex.jpg
 Every software project is complex or at least become complex after a while. This is let's say *expected* nowadays, due to the usual requirements have blown up significantly nowadays (logging+reporting, real-time analytics, hot code replacement, a\b testing etc...). No wonder... this is an awfull lot, turns the codebase a big complex strand. Is there any way to keep things simple within this tangled web though? Let's see what we can do...
 
 ## Why simplicity?
-Although it seems naturally obvious why we should thrive for simplicity it might worth an explanation. Nowadays users getting more and more tech in their lives everyday, they naturally start questioning and mistrusting software systems. I've heard many times "it's too simple to be secure and reliable", somehow we tend to associate complexity with adequate software. This is a huge misconception that everyone should forget **ASAP**. In reality, complexity is only exposing maintenance burden to software teams and accelerate the rotting effect[^1]. Simplicity, in fact, can enable the team to iterate quicker and fix bugs more effectively.
+Although it seems naturally obvious why we should thrive for simplicity it might worth an explanation. Nowadays users getting more and more tech in their lives everyday, they naturally start questioning and mistrusting software systems. I've heard many times "it's too simple to be secure and reliable", somehow we tend to associate complexity with adequate software. This is a huge misconception that everyone should forget **ASAP**. In reality, complexity is only exposing maintenance burden to software teams and accelerate the rotting effect [^1]. Simplicity, in fact, can enable the team to iterate quicker and fix bugs more effectively.
 
 ![simple-vs-complex](/assets/images/art-of-simplicity/simple-vs-complex.jpg)
 
@@ -23,7 +23,7 @@ This is nice so far, but how do we achieve this after all? The only thing we nee
 So when we start a project we have a user story, let's start to design a system which satisfies our needs for that scope. Not less and not more, ignore logging, reporting, analytics, localisation, they don't matter now. Great, next sprint we have another story, let's change our design a bit, to work for the first and second stories, that's all for now. Continue this approach until the point when so-called *breakthrough* happens. This is the exact moment when we realized *x* stories (varies team by team, project by project) and finally we see the insight, the connection between the features to create a very nice abstraction. This is considered, a design milestone for the system which is reusable, shareable amongst teams etc. *Wait...* what happens if it turns out the abstraction is still not good enough... Let's start the process again, it's never-ending, the system is improving all the time.
 
 ![iterative_design](/assets/images/art-of-simplicity/iterative_design.gif)
-*breakthrough in connection with value/refactoring[^2]*
+*breakthrough in connection with value/refactoring [^2]*
 
 One final question to ask: is this a guarantee to achieve simplicity? No, it's not... However, it *helps* you on the path by reducing the scope and keep your mind clear, keep all the things away that you don't need. No one can solve anything at once it's simple impossible. Less is more, one of my reminder of that:
 
