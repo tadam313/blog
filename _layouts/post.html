@@ -2,11 +2,12 @@
 layout: default
 ---
 {% assign post_url = site.url | append: page.url %}
+{% assign title_enc = page.title | url_encode %}
 
 {% if page.bitlink %}
-  {% assign share_url = page.bitlink %}
+  {% assign share_url = page.bitlink | url_encode %}
 {% else %}
-  {% assign share_url = post_url %}
+  {% assign share_url = post_url | url_encode %}
 {% endif %}
 
 <div class="post">
@@ -18,7 +19,7 @@ layout: default
 <ul class="social-panel">
   <li>
     <a class="share-link"
-       href="https://twitter.com/intent/tweet?url={{ share_url | url_encode }}&text={{ page.title | url_encode }}&via=tadam313&hashtags={{ page.tags | first | url_encode }}"
+       href="https://twitter.com/intent/tweet?url={{ share_url }}&text={{ title_enc }}&via={{ site.author.name }}&hashtags={{ page.tags | first | url_encode }}"
        title="Share on Twitter">
       <img src="/assets/images/icons/twitter-share.svg" alt="Share on Twitter" />
     </a>
@@ -32,9 +33,16 @@ layout: default
   </li> -->
   <li>
     <a class="share-link"
-       href="https://plus.google.com/share?url={{ share_url | url_encode }}&hl=en-US"
+       href="https://plus.google.com/share?url={{ share_url }}&hl=en-US"
        title="Share on Google Plus">
       <img src="/assets/images/icons/google-share.svg" alt="Share on Google Plus" />
+    </a>
+  </li>
+  <li>
+    <a class="share-link"
+       href="mailto:?subject={{ title_enc }}&body={{ page.excerpt | append: ' ' | append: share_url | strip_html }}"
+       title="Share via Email">
+      <img src="/assets/images/icons/mail-share.svg" alt="Share via Email" />
     </a>
   </li>
 </ul>
