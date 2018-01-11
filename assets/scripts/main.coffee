@@ -9,6 +9,8 @@ $ ->
 
   # handle social share buttons
   $('.social-panel .share-link').click (ev) ->
-    ev.preventDefault()
     location = $(this).prop 'href'
-    window.open location, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600'
+
+    if /^https?:\/\//.test location
+      ev.preventDefault()
+      window.open location, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600'
