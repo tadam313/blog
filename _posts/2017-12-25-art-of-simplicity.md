@@ -6,10 +6,10 @@ bitlink: http://bit.ly/2C0LqnS
 image: art-of-simplicity/simple-vs-complex.jpg
 ---
 
-Every software project is complex or at least become complex after a while. This is let's say *expected* nowadays, due to the usual requirements have blown up significantly nowadays (logging+reporting, real-time analytics, hot code replacement, a\b testing etc...). No wonder... this is an awfull lot, turns the codebase a big complex strand. Is there any way to keep things simple within this tangled web though? Let's see what we can do...
+Every software project is complex or at least become complex after a while. This is -- let's say -- *expected* nowadays, since the usual requirements have blown up significantly (logging+reporting, real-time analytics, hot code replacement, a\b testing etc...). No wonder... this is an awfull lot, which turns the codebase a big complex strand. Is there any way to keep things simple within this tangled web though? Let's see what we can do...
 
 ## Why simplicity?
-Although it seems naturally obvious why we should thrive for simplicity it might worth an explanation. Nowadays users getting more and more tech in their lives everyday, they naturally start questioning and mistrusting software systems. I've heard many times "it's too simple to be secure and reliable", somehow we tend to associate complexity with adequate software. This is a huge misconception that everyone should forget **ASAP**. In reality, complexity is only exposing maintenance burden to software teams and accelerate the rotting effect [^1]. Simplicity, in fact, can enable the team to iterate quicker and fix bugs more effectively.
+Although it seems naturally obvious why we should thrive for simplicity it might worth an explanation. These days users are getting more and more tech in their lives, they naturally start questioning and mistrusting software systems. I've heard many times "it's too simple to be secure and reliable", somehow we tend to associate complexity with adequate software. This is a huge misconception that everyone should forget **ASAP**. In reality, complexity is only exposing maintenance burden to software projects and accelerate the rotting effect [^1]. Simplicity, in fact, can enable the team to iterate quicker and fix bugs more effectively.
 
 ![simple-vs-complex](/assets/images/art-of-simplicity/simple-vs-complex.jpg)
 
