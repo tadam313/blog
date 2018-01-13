@@ -3,6 +3,8 @@
 
 body, html, .wrap {
   height: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .post, .page {
