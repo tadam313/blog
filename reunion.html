@@ -1,0 +1,151 @@
+<html>
+<head>
+  <style>
+    body, html {
+      height: 100%;
+      min-height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      align-content: space-between;
+      font-size: 12px;
+      color: white;
+      background: url(https://aussiegroup.co.uk/wp-content/uploads/2017/01/Reasons-To-Be-Happy-You-Moved-To-London.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .title {
+      font-size: xx-large;
+      flex: .2;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .countdown-container {
+      display: flex;
+      width: 100%;
+      max-width: 70%;
+      justify-content: space-between;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+      width: 140px;
+      height: 140px;
+    }
+
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+      font-size: 2.5em;
+      margin: 10px 0;
+    }
+
+
+    .days-label,
+    .hours-label,
+    .minutes-label,
+    .seconds-label {
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    @media (max-width: 800px) {
+
+      .countdown-container {
+        max-width: 90%;
+      }
+
+      .container {
+        font-size: 0.8em;
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  <section class="title">
+    Reunion: London
+  </section>
+  <section class="countdown-container">
+
+    <div class="container">
+      <div class="days"></div>
+      <div class="days-label">days</div>
+    </div>
+
+    <div class="container">
+      <div class="hours"></div>
+      <div class="hours-label">hours</div>
+    </div>
+
+    <div class="container">
+      <div class="minutes"></div>
+      <div class="minutes-label">minutes</div>
+    </div>
+
+    <div class="container">
+      <div class="seconds"></div>
+      <div class="seconds-label">seconds</div>
+    </div>
+
+  </section>
+  <script>
+    const countDownClock = () => {
+
+      const d = document;
+      const daysElement = d.querySelector('.days');
+      const hoursElement = d.querySelector('.hours');
+      const minutesElement = d.querySelector('.minutes');
+      const secondsElement = d.querySelector('.seconds');
+      let countdown;
+      timer();
+
+      function timer(seconds) {
+        const then = new Date('2018-05-04T18:30:00');
+
+        countdown = setInterval(() => {
+          const secondsLeft = Math.round((then - Date.now()) / 1000);
+
+          if(secondsLeft <= 0) {
+            clearInterval(countdown);
+            return;
+          };
+
+          displayTimeLeft(secondsLeft);
+        },1000);
+      }
+
+      function displayTimeLeft(seconds) {
+        daysElement.textContent = Math.floor(seconds / 86400);
+        hoursElement.textContent = Math.floor((seconds % 86400) / 3600);
+        minutesElement.textContent = Math.floor((seconds % 86400) % 3600 / 60);
+        secondsElement.textContent = seconds % 60 < 10 ? `0${seconds % 60}` : seconds % 60;
+      }
+    }
+
+    countDownClock();
+  </script>
+</body>
+</html>
