@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Taste of mobile engineering
-tags: ['software_development', 'mobile engineering', 'react native']
+tags: ['mobile engineering', 'react native', 'Skyscanner']
 image: art-of-simplicity/simple-vs-complex.jpg
 ---
 

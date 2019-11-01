@@ -18,5 +18,12 @@ $breakpoints: (
   }
 }
 
+$spacing-base: 1em;
+$spacing-xxs: $spacing-base * 0.25;
+$spacing-xs: $spacing-base * 0.5;
+$spacing-sm: $spacing-base * 0.75;
+$spacing-xl: $spacing-base * 1.25;
+$spacing-xxl: $spacing-base * 1.5;
+
 // colours
 $primary_alt_text: #7a7a7a;

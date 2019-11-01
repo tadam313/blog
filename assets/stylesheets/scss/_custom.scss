@@ -15,7 +15,7 @@ body, html, .wrap {
     max-width: 90%;
   }
 
-  margin-bottom: 2rem;
+  margin-bottom: $spacing-xxl;
 }
 
 .sidebar-nav-item {
@@ -40,7 +40,7 @@ body, html, .wrap {
   li {
     list-style: none;
     display: inline-block;
-    margin: auto 10px;
+    margin: auto $spacing-sm;
   }
 
   a {
@@ -62,8 +62,8 @@ body, html, .wrap {
   font-size: .75rem;
   font-style: italic;
   border-top: 1px solid $primary_alt_text;
-  padding-top: 1rem;
-  margin-top: .5rem;
+  padding-top: $spacing-base;
+  margin-top: $spacing-xs;
 }
 
 // figure caption
@@ -79,12 +79,16 @@ img + em {
   padding-left: 0;
 
   li {
-    padding: 3px 6px;
-    margin: 3px auto;
+    padding: $spacing-xxs $spacing-xs;
+    margin: $spacing-xs auto;
     font-size: 0.75em;
     display: inline-block;
     list-style: none;
     background: #505050;
     color: #fff;
   }
+}
+
+iframe {
+  margin: $spacing-base auto;
 }
