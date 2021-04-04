@@ -1,45 +1,46 @@
-title: Mind of a developer
-description: tadam313 personal blog
+title: Adam's blog
+description: Adam's blog
 tagline: '< /dev/urandom'
 
-# Sass compilation
+show_excerpts: true
+
 sass:
-  sass_dir: assets/stylesheets/scss
+  sass_dir: assets/stylesheets
   style: compressed
+
+texture:
+  title: Adam's blog
+  tagline: Nerd. Gamer. Cycler. Musician.
+  style: blue
+  showNav: true
+  date_format: "%b %-d, %Y"
+
+  social_links:
+    twitter: tadam313
+    github:  tadam313
+    linkedIn: in/adam-pelle-79846752
+
+theme: texture
+remote_theme: thelehhman/texture
 
 # Same as the title etc for your site but can instead be
 # called by using 'site.author.name' and so on
 author:
   name: tadam313
   email: adam.pelle.peter@gmail.com
-  bio: 'Software engineer and musician'
-  twitter: https://twitter.com/tadam313
-  facebook: https://facebook.com/adam.pelle313
-  linkedin: https://hu.linkedin.com/pub/adam-pelle/52/467/798
 
 url: 'http://tadam313.github.io'
-
-# general setting for Jekyll
-# googleAnalytics: UA-XXXXX-X
 
 plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-coffeescript
 
-# Enables future posts (posts with dates in the future) and drafts
-future: false
-show_drafts: false
-# Disables the more accurate related posts for faster generating of the site
-lsi: false
-# Only make the last 10 posts so generating isn't slow
-limit_posts: 10
+# # Pagination options
+# permalink: pretty
+# paginate: 10
+# paginate_path: 'page:num'
 
-# Pagination options
-permalink: pretty
-paginate: 10
-paginate_path: 'page:num'
-
-# Markdown library
-markdown: kramdown
-highlighter: rouge
+# # Markdown library
+# markdown: kramdown
+# highlighter: rouge

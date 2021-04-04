@@ -1,64 +1,40 @@
----
-layout: default
----
-{% assign post_url = site.url | append: page.url %}
-{% assign title_enc = page.title | url_encode %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {%- include head.html -%}
+</head>
+<body>
+  <header class="texture-{{ site.texture.style }}">
+    <div class="container">
+      {%- include nav.html -%}
+    </div>
+    {%- include post_header.html -%}  
+  </header>
+  <main>
+    <div class="container">
+      <div class="post-container">
+          {{ content }}
+      </div>
 
-{% if page.bitlink %}
-  {% assign share_url = page.bitlink | url_encode %}
-{% else %}
-  {% assign share_url = post_url | url_encode %}
-{% endif %}
-
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
-</div>
-
-<ul class="social-panel">
-  <li>
-    <a class="share-link"
-       href="https://twitter.com/intent/tweet?url={{ share_url }}&text={{ title_enc }}&via={{ site.author.name }}&hashtags={{ page.tags | first | url_encode }}"
-       title="Share on Twitter">
-      <img src="/assets/images/icons/twitter-share.svg" alt="Share on Twitter" />
-    </a>
-  </li>
-<!--   <li>
-    <a class="share-link"
-       href=""
-       title="Share on Facebook">
-      <img src="/assets/images/icons/facebook-share.svg" alt="Share on Facebook" />
-    </a>
-  </li> -->
-  <li>
-    <a class="share-link"
-       href="https://plus.google.com/share?url={{ share_url }}&hl=en-US"
-       title="Share on Google Plus">
-      <img src="/assets/images/icons/google-share.svg" alt="Share on Google Plus" />
-    </a>
-  </li>
-  <li>
-    <a class="share-link"
-       href="mailto:?subject={{ page.title }}&body={{ page.excerpt | append: ' ' | append: share_url | strip_html }}"
-       title="Share via Email">
-      <img src="/assets/images/icons/mail-share.svg" alt="Share via Email" />
-    </a>
-  </li>
-</ul>
-
-<div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+        <!-- Configure Disqus -->
+      {%- if site.texture.disqus_shortname -%}
+        <div id="disqus_thread" style="margin-top:25px"></div>
+        <script>
+          var disqus_config = function () {
+            this.page.url = '{{ page.url | absolute_url }}';
+            this.page.identifier = '{{ page.url | absolute_url }}';
+          };
+          (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://{{ site.texture.disqus_shortname }}.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+      {%- endif -%}
+    </div>
+  </main>
+  {%- include footer.html -%}
+</body>
+</html>
