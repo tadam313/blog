@@ -2,7 +2,7 @@
 layout: post
 title: How to tame immense json in Python
 tags: ['python', 'json', 'dictionaries', 'adapter pattern']
-bitlink: http://bit.ly/29jw90s
+post_link: http://bit.ly/29jw90s
 image: python_dicts/magic_face.png
 ---
 
@@ -30,7 +30,7 @@ The other issue is more tactile, though. Imagine a huge JSON with many gaps (mea
 ### Using fallback value
 
 So probably you end up something like this:
-  
+
 {% highlight python %}
 values = huge_json.get("field1", {}).get("field2", {})...get("fieldn")
 {% endhighlight %}
