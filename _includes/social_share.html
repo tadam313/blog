@@ -1,0 +1,16 @@
+<ul class="social-panel">
+  <li>
+    <a class="share-link"
+      href="https://twitter.com/intent/tweet?url={{ include.share_url }}&text={{ page.title | url_encode }}&via={{ site.author.name }}&hashtags={{ page.tags | first | url_encode }}"
+      title="Share on Twitter">
+      <img src="/assets/images/icons/twitter-share.svg" alt="Share on Twitter" />
+    </a>
+  </li>
+  <li>
+    <a class="share-link"
+      href="mailto:?subject={{ page.title }}&body={{ page.excerpt | append: ' ' | append: include.share_url | strip_html }}"
+      title="Share via Email">
+      <img src="/assets/images/icons/mail-share.svg" alt="Share via Email" />
+    </a>
+  </li>
+</ul>
