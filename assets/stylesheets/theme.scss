@@ -233,7 +233,7 @@ header {
 }
 
 .post-container {
-  img, iframe {
+  img:not(.emoji), iframe {
     margin: auto;
     display: block;
 

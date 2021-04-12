@@ -32,6 +32,7 @@ author:
 url: 'http://tadam313.github.io'
 
 plugins:
+  - jemoji
   - jekyll-paginate
   - jekyll-gist
   - jekyll-coffeescript
