@@ -2,6 +2,7 @@
 layout: post
 title: Chromecast to homekit with Synology
 tags: ['smart home', 'chromecast', 'homekit', 'synology']
+post_link: https://cutt.ly/dveuQCa
 ---
 
 I've been using homekit for quite a while now and I have to say, accessory/manufacturer coverage isn't the best... Luckily there is this wonderful open source project called [homebridge](https://homebridge.io/) which lets you connect unsupported devices to homekit ecosystem. I'm running homebridge on a Synology NAS - DS118 currently. I'm planning to share some details of this setup at later posts for now I'm focusing on Chromecast integration with homebridge.

@@ -20,7 +20,7 @@ texture:
     github:  tadam313
     linkedIn: in/adam-pelle-79846752
 
-theme: texture
+# theme: texture
 remote_theme: thelehhman/texture
 
 # Same as the title etc for your site but can instead be

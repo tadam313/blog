@@ -29,6 +29,9 @@ a {
 	color: $linkColor;
 	text-decoration: none;
 	transition: border-bottom 0.4s;
+  display: inline-block;
+  border-bottom: 0.5px solid transparent;
+
 	&:hover {
 		border-bottom: 0.5px solid $linkColor;
 	}
@@ -60,8 +63,7 @@ figcaption {
 }
 
 header {
-	// background-size: cover;
-	padding: 120px 0;
+	padding: 50px 0;
 	color: #fff;
 	overflow: hidden;
 	h2 {
@@ -191,11 +193,13 @@ header {
 }
 
 .social-panel {
+  padding: 3px;
   text-align: center;
 
   li {
     list-style-type: none;
     display: inline-block;
+    margin: 0 1em;
 
     a {
       display: block;
@@ -203,7 +207,7 @@ header {
   }
 
   img {
-    max-width: 50px;
+    width: 50px;
   }
 }
 
@@ -246,9 +250,8 @@ header {
 
 .navbar {
 	display: flex;
-	position: absolute;
-	top: 0;
-	right: 5vw;
+  margin: 1em 0;
+
 	a {
 		color: inherit;
 	}

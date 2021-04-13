@@ -2,7 +2,6 @@
 layout: post
 title: How to tame immense json in Python
 tags: ['python', 'json', 'dictionaries', 'adapter pattern']
-post_link: http://bit.ly/29jw90s
 image: python_dicts/magic_face.png
 ---
 

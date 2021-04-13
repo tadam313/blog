@@ -2,7 +2,6 @@
 layout: post
 title: Art of simplicity
 tags: ['software_development', 'simplicity', 'complexity', 'project']
-post_link: http://bit.ly/2C0LqnS
 image: art-of-simplicity/simple-vs-complex.jpg
 ---
 
