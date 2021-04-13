@@ -2,7 +2,7 @@
 layout: post
 title: Art of simplicity
 tags: ['software_development', 'simplicity', 'complexity', 'project']
-image: art-of-simplicity/simple-vs-complex.jpg
+image: /assets/images/art-of-simplicity/simple-vs-complex.jpg
 ---
 
 Every software project is complex or at least become complex after a while. This is -- let's say -- *expected* nowadays, since the usual requirements have blown up significantly (monitoring+alerting, real-time analytics, a\b testing etc...). No wonder... this is an awfull lot, which turns the codebase a big complex strand. Is there any way to keep things simple within this tangled web though? Let's see what we can do...

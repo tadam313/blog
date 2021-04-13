@@ -2,7 +2,7 @@
 layout: post
 title: Taste of mobile engineering
 tags: ['mobile engineering', 'react native', 'Skyscanner']
-image: art-of-simplicity/simple-vs-complex.jpg
+image: /assets/images/art-of-simplicity/simple-vs-complex.jpg
 ---
 
 Let's start with some facts, I do believe every company at some point starting to realize, they have to seriously consider mobile as a primary first-class citizen amongst the client software. This exact transition happened with Skyscanner as well not so long ago and we shifted our client efforts to the native mobile application. Ok but *wait...*, how can a company at this size from previous web background make such a move? Obviously, there had to be some middle ground, we had to find an incremental way to facilitate this effort to everyone not to be that daunting. Ok, so what had happened exactly? *React Native* happened :)

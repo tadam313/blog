@@ -2,7 +2,7 @@
 layout: post
 title: How to tame immense json in Python
 tags: ['python', 'json', 'dictionaries', 'adapter pattern']
-image: python_dicts/magic_face.png
+image: /assets/images/python_dicts/magic_face.png
 ---
 
 Recently my team and me encountered a problem which didn't seem very complicated at first... The goal was to simply work with and process very large JSON objects in Python. We decided not to create a heavyweight, fully fledged model object as it takes time and we probably wouldn't need every part anyway, so we sticked at the good old dictionary. This choice has started to pay off, then all the sudden the realization came with a big sigh...

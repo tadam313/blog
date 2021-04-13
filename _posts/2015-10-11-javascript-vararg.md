@@ -2,7 +2,7 @@
 layout: post
 title: The myth of variable arguments
 tags: ['javascript', 'functions', 'overloading']
-image: varargs/surprise_meme.jpg
+image: /assets/images/varargs/surprise_meme.jpg
 related_posts: ["http://ejohn.org/blog/javascript-method-overloading"]
 ---
 
