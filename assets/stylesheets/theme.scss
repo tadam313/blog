@@ -60,6 +60,7 @@ figcaption {
 	font-size: 10pt;
 	line-height: 1.5em;
 	margin-top: -1em;
+  text-align: center;
 }
 
 header {
@@ -231,9 +232,6 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	a:hover {
-		border-bottom: none;
-	}
 }
 
 .post-container {
