@@ -1,7 +1,7 @@
 <ul class="social-panel">
   <li>
     <a class="share-link"
-      href="https://twitter.com/intent/tweet?url={{ include.share_url }}&text={{ page.title | url_encode }}&via={{ site.author.name }}&hashtags={{ page.tags | first | url_encode }}"
+      href="https://twitter.com/intent/tweet?url={{ include.share_url | url_encode }}&text={{ page.title | url_encode }}&via={{ site.author.name }}&hashtags={{ page.tags | first | url_encode }}"
       title="Share on Twitter">
       <img src="/assets/images/icons/twitter-share.svg" alt="Share on Twitter" />
     </a>

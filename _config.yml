@@ -35,6 +35,7 @@ plugins:
   - jemoji
   - jekyll-paginate
   - jekyll-gist
+  - jekyll-seo-tag
   - jekyll-coffeescript
 
 # # Pagination options

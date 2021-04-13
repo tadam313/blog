@@ -269,6 +269,7 @@ DEPENDENCIES
   jekyll-coffeescript
   jekyll-gist
   jekyll-paginate
+  jekyll-seo-tag
   jemoji
   texture
 
