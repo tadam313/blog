@@ -232,6 +232,14 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+  a {
+    border-bottom: none;
+
+    &:hover {
+      border-bottom: none;
+    }
+  }
 }
 
 .post-container {
